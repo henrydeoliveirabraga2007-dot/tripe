@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Trip | Agência de Viagens</title>
+<meta name="theme-color" content="#010B24">
+<meta name="author" content="Prime Trip">
+<meta name="description" content="A Prime Trip é uma agência de viagens que planeja viagens nacionais e internacionais de forma personalizada. Fale com um especialista e planeje sua próxima viagem.">
+<meta property="og:title" content="Prime Trip | Agência de Viagens">
+<meta property="og:description" content="A Prime Trip é uma agência de viagens que planeja viagens nacionais e internacionais de forma personalizada. Fale com um especialista e planeje sua próxima viagem.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="assets/styles-dhNBlFJ_.css">
+<style>
+  header.is-scrolled { background: color-mix(in oklab, var(--navy) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: var(--line); }
+  header.is-scrolled > div { height: 4.5rem; }
+  #mobile-menu { transition: opacity .5s ease; pointer-events: none; }
+  #mobile-menu.open { opacity: 1 !important; pointer-events: auto; }
+  #mobile-menu nav a { transition: opacity .6s ease, transform .6s cubic-bezier(.16,1,.3,1); }
+  #mobile-menu.open nav a { opacity: 1 !important; transform: none !important; }
+  .faq-panel { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .5s ease, opacity .5s ease; }
+  .faq-panel > div { overflow: hidden; }
+  .faq-item.open .faq-panel { grid-template-rows: 1fr; opacity: 1; }
+  .faq-item.open .faq-plus { transform: scaleY(0); }
+
+  /* Depoimentos */
+  .t-wrap { position: relative; }
+  .t-viewport { overflow: hidden; cursor: grab; touch-action: pan-y pinch-zoom; }
+  .t-viewport.is-dragging { cursor: grabbing; }
+  .t-track { display: flex; margin-left: -16px; }
+  .t-slide { flex: 0 0 90%; min-width: 0; padding-left: 16px; }
+  @media (min-width: 768px) { .t-slide { flex-basis: 66%; } }
+  @media (min-width: 1024px) { .t-slide { flex-basis: 45%; } }
+  .t-card { display: flex; height: 240px; overflow: hidden; border-radius: 10px; border: 1px solid color-mix(in oklab, var(--gold) 25%, transparent); background: var(--navy-deep); user-select: none; }
+  @media (min-width: 768px) { .t-card { height: 340px; } }
+  @media (min-width: 1280px) { .t-card { height: 380px; } }
+  .t-card img { display: block; height: 100%; -webkit-user-drag: none; pointer-events: none; }
+  .t-trip { width: 40%; object-fit: cover; }
+  .t-quote { width: 60%; object-fit: contain; background: #1c1c1e; padding: 8px; }
+  .t-dots { display: flex; justify-content: center; gap: 10px; margin-top: 32px; }
+  .t-dot { width: 7px; height: 7px; border-radius: 999px; background: color-mix(in oklab, var(--gold) 30%, transparent); transition: all .4s ease; }
+  .t-dot.is-active { width: 22px; background: var(--gold); }
+  .t-arrow { display: none; position: absolute; top: 190px; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--gold) 50%, transparent); background: color-mix(in oklab, var(--navy-deep) 70%, transparent); color: var(--gold-light); font-size: 16px; transition: all .4s ease; }
+  .t-arrow:hover { border-color: var(--gold); background: color-mix(in oklab, var(--gold) 12%, var(--navy-deep)); }
+  .t-prev { left: -22px; } .t-next { right: -22px; }
+  @media (min-width: 1024px) { .t-arrow { display: flex; align-items: center; justify-content: center; } }
+  @media (min-width: 1024px) and (max-width: 1279px) { .t-arrow { top: 170px; } }
+</style>
+</head>
+<body>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 border-transparent bg-transparent"><div class="mx-auto flex max-w-[1400px] items-center justify-between px-5 transition-all duration-500 md:px-10 h-20 md:h-24"><a href="#top" aria-label="Prime Trip — início"><span class="flex items-center gap-3"><img src="assets/logo-symbol-wX84g404.png" alt="" aria-hidden="true" width="540" height="340" class="h-6 w-auto"><span class="flex flex-col items-center leading-none"><span class="text-gold-gradient font-normal tracking-[0.35em] text-[13px]">PRIME TRIP</span><span class="mt-1.5 flex w-full items-center gap-1.5"><span class="h-px flex-1 bg-gold/50"></span><span class="text-[6.5px] tracking-[0.25em] text-gold/90">AGÊNCIA DE VIAGENS</span><span class="h-px flex-1 bg-gold/50"></span></span></span></span></a><nav aria-label="Principal" class="hidden items-center gap-9 lg:flex"><a href="#experiencias" class="text-[12px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-gold-light">Experiências</a><a href="#destinos" class="text-[12px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-gold-light">Destinos</a><a href="#como-funciona" class="text-[12px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-gold-light">Como funciona</a><a href="#sobre" class="text-[12px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-gold-light">Sobre a Prime Trip</a><a href="#faq" class="text-[12px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-gold-light">FAQ</a><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20pr%C3%B3xima%20viagem%20com%20a%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 font-medium uppercase tracking-[0.22em] transition-all duration-500 rounded-sm border border-gold/60 text-foreground hover:bg-gold/10 hover:border-gold min-h-[42px] px-5 text-[11px]">Planejar minha viagem</a></nav><button id="menu-btn" class="relative z-50 flex h-12 w-12 flex-col items-center justify-center gap-1.5 lg:hidden" aria-label="Abrir menu" aria-expanded="false"><span class="h-px w-7 bg-gold transition-transform duration-500"></span><span class="h-px w-7 bg-gold transition-transform duration-500"></span></button></div><div id="mobile-menu" class="fixed inset-0 z-40 flex flex-col justify-between bg-navy px-6 pb-10 pt-28 lg:hidden" style="opacity: 0;"><nav aria-label="Menu móvel" class="flex flex-col gap-6"><a href="#experiencias" class="headline text-4xl text-foreground" style="opacity: 0; transform: translateY(20px);">Experiências</a><a href="#destinos" class="headline text-4xl text-foreground" style="opacity: 0; transform: translateY(20px);">Destinos</a><a href="#como-funciona" class="headline text-4xl text-foreground" style="opacity: 0; transform: translateY(20px);">Como funciona</a><a href="#sobre" class="headline text-4xl text-foreground" style="opacity: 0; transform: translateY(20px);">Sobre a Prime Trip</a><a href="#faq" class="headline text-4xl text-foreground" style="opacity: 0; transform: translateY(20px);">FAQ</a></nav><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20pr%C3%B3xima%20viagem%20com%20a%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[52px] items-center justify-center gap-3 px-8 text-[12px] font-medium uppercase tracking-[0.22em] transition-all duration-500 rounded-sm bg-gold-gradient text-navy hover:brightness-110 w-full">Planejar minha viagem</a></div></header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="relative min-h-[100svh] overflow-hidden bg-navy"><img src="assets/travel-poster.jpg" alt="" aria-hidden="true" fetchpriority="high" width="1280" height="720" class="absolute inset-0 h-full w-full object-cover"><video class="absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms]" poster="assets/travel-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/travel-browser.webm" type="video/webm"><source src="assets/travel-browser.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-[linear-gradient(90deg,color-mix(in_oklab,var(--navy)_90%,transparent)_0%,color-mix(in_oklab,var(--navy)_70%,transparent)_45%,color-mix(in_oklab,var(--navy)_35%,transparent)_100%)]"></div><div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-navy/70 to-transparent"></div><div class="absolute inset-x-0 bottom-0 z-[2] h-16 bg-gradient-to-t from-navy to-transparent"></div><div class="absolute inset-x-0 bottom-0 z-[2] h-[55%] bg-gradient-to-t from-navy/85 to-transparent md:hidden"></div><div class="relative z-10 mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-5 pb-24 pt-32 md:justify-center md:px-10 md:pb-0"><div class="max-w-2xl"><div class="mb-7 flex items-center gap-4" data-hero style="opacity:0;transform:translateY(24px)"><span class="h-px w-10 bg-gold-gradient"></span><span class="eyebrow text-gold">Agência de viagens</span></div><h1 class="headline text-[clamp(2.75rem,7vw,5.5rem)] text-foreground"><span class="block" data-hero style="opacity:0;transform:translateY(40px)">Viaje</span><span class="block italic text-gold-gradient pb-2" data-hero style="opacity:0;transform:translateY(40px)">além do destino.</span></h1><p class="mt-7 max-w-xl text-[15px] leading-relaxed text-muted-foreground md:text-[17px]" data-hero style="opacity:0;transform:translateY(24px)">A Prime Trip planeja viagens nacionais e internacionais de forma personalizada e exclusiva, do primeiro contato ao retorno para casa.</p><div class="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-8" data-hero style="opacity:0;transform:translateY(24px)"><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20pr%C3%B3xima%20viagem%20com%20a%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[52px] items-center justify-center gap-3 px-8 text-[12px] font-medium uppercase tracking-[0.22em] transition-all duration-500 rounded-sm bg-gold-gradient text-navy hover:brightness-110 w-full sm:w-auto">Planejar minha viagem</a><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Quero%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20viagens%20da%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[52px] items-center justify-center gap-3 text-[12px] font-medium uppercase tracking-[0.22em] transition-all duration-500 px-0 text-foreground underline decoration-gold/70 underline-offset-[10px] hover:decoration-gold hover:text-gold-light">Falar com um especialista</a></div></div></div><div class="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 xl:flex" aria-hidden="true"><span class="eyebrow text-[9px] text-muted-foreground">Role</span><span class="relative block h-14 w-px overflow-hidden bg-line"><span class="animate-scroll-line absolute inset-0 bg-gold"></span></span></div></section>
+
+<!-- EXPERIÊNCIAS -->
+<section id="experiencias" class="relative bg-navy py-28 md:py-44"><div class="mx-auto grid max-w-[1400px] gap-16 px-5 md:grid-cols-12 md:px-10"><div class="md:col-span-5 md:pt-16"><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Experiências</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Não planejamos apenas viagens. Criamos <em class="text-gold-gradient">experiências.</em></h2></div></div><div style="opacity:0;transform:translateY(24px)"><p class="mt-8 max-w-md text-[16px] leading-relaxed text-muted-foreground">Cada roteiro é pensado de acordo com o perfil, o objetivo e o momento do viajante. Nada é genérico — tudo é desenhado para você.</p></div></div><div class="min-w-0 md:col-span-7"><div class="relative"><div class="overflow-hidden aspect-[4/5] md:ml-[12%] md:aspect-[4/5]"><img src="assets/exp-rio-BIA_LmzV.jpg" alt="Rio de Janeiro ao entardecer com o Cristo Redentor ao fundo" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover" style="opacity:0;transform:scale(1.08)"></div><div class="absolute -bottom-14 -left-2 w-[48%] border border-navy shadow-2xl md:-left-6 md:w-[42%]" style="transform:translateY(40px)"><div class="overflow-hidden aspect-[3/4]"><img src="assets/exp-castle-B2EjDxGn.jpg" alt="Castelo do Magic Kingdom em Orlando ao entardecer" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover" style="opacity:0;transform:scale(1.08)"></div></div></div><div class="mt-32 flex min-w-0 items-center gap-4 md:ml-[12%] md:justify-end" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-12 shrink-0" style="transform:scaleX(0)"></span><span class="eyebrow min-w-0 text-[10px] leading-relaxed text-muted-foreground">Roteiros exclusivos · Nacionais e internacionais</span></div></div></div></section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="relative py-28 md:py-40" style="background:color-mix(in oklab, var(--navy) 50%, var(--navy-deep))"><div class="mx-auto max-w-[1400px] px-5 md:px-10"><div class="mb-16"><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Depoimentos</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Quem viajou, <em class="text-gold-gradient">recomenda.</em></h2></div></div><div class="t-wrap" style="opacity:0;transform:translateY(24px)"><div class="t-viewport" id="t-viewport"><div class="t-track" id="t-track"></div></div><button type="button" class="t-arrow t-prev" id="t-prev" aria-label="Depoimento anterior">&#8592;</button><button type="button" class="t-arrow t-next" id="t-next" aria-label="Próximo depoimento">&#8594;</button><div class="t-dots" id="t-dots" role="tablist" aria-label="Depoimentos"></div></div></div></section>
+
+<!-- DESTINOS -->
+<section id="destinos" class="bg-navy-deep py-28 md:py-40"><div class="mx-auto max-w-[1400px] px-5 md:px-10"><div class="mb-16"><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Destinos</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Qual experiência você deseja <em class="text-gold-gradient">viver?</em></h2></div></div></div><div id="dest-grid" class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 xl:auto-rows-[300px] xl:grid-cols-12"></div></div></section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="bg-navy py-28 md:py-40"><div class="mx-auto max-w-[1400px] px-5 md:px-10"><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Como funciona</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Do primeiro contato <em class="text-gold-gradient">ao desembarque.</em></h2></div></div><div class="relative mt-20"><span aria-hidden="true" class="absolute left-0 right-0 top-0 hidden h-px origin-left bg-gold/40 md:block" style="transform:scaleX(0)"></span><ol class="grid md:grid-cols-4">
+<li class="list-none border-t border-line py-10 md:border-t-0 md:px-8 md:pt-12" style="opacity:0;transform:translateY(24px)"><span class="headline block text-6xl text-gold/80 md:text-7xl">01</span><h3 class="eyebrow mt-8 text-[12px] text-foreground">Converse com a Prime Trip</h3><p class="mt-4 text-[15px] text-muted-foreground">Conte o que você deseja viver.</p></li>
+<li class="list-none border-t border-line py-10 md:border-t-0 md:px-8 md:pt-12 md:border-l" style="opacity:0;transform:translateY(24px)"><span class="headline block text-6xl text-gold/80 md:text-7xl">02</span><h3 class="eyebrow mt-8 text-[12px] text-foreground">Planejamento personalizado</h3><p class="mt-4 text-[15px] text-muted-foreground">Criamos um roteiro alinhado ao seu perfil.</p></li>
+<li class="list-none border-t border-line py-10 md:border-t-0 md:px-8 md:pt-12 md:border-l" style="opacity:0;transform:translateY(24px)"><span class="headline block text-6xl text-gold/80 md:text-7xl">03</span><h3 class="eyebrow mt-8 text-[12px] text-foreground">Tudo organizado</h3><p class="mt-4 text-[15px] text-muted-foreground">Cuidamos dos detalhes da sua viagem.</p></li>
+<li class="list-none border-t border-line py-10 md:border-t-0 md:px-8 md:pt-12 md:border-l" style="opacity:0;transform:translateY(24px)"><span class="headline block text-6xl text-gold/80 md:text-7xl">04</span><h3 class="eyebrow mt-8 text-[12px] text-foreground">Você só precisa viajar</h3><p class="mt-4 text-[15px] text-muted-foreground">Aproveite a experiência.</p></li>
+</ol></div></div></section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-navy-deep py-28 md:py-40"><div class="mx-auto grid max-w-[1400px] gap-16 px-5 md:grid-cols-12 md:px-10"><div class="md:col-span-4"><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Diferenciais</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Por que viajar com a <em class="text-gold-gradient">Prime Trip?</em></h2></div></div></div><div class="md:col-span-8"><ul id="dif-list" class="grid md:grid-cols-2 md:gap-x-12"></ul><div class="mt-8 flex items-start gap-4 border border-gold/40 px-5 py-6" style="opacity:0;transform:translateY(24px)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 shrink-0 text-gold" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><div><p class="headline text-xl text-foreground">Empresa cadastrada no Cadastur</p><p class="mt-2 text-[12px] leading-relaxed text-muted-foreground">Sistema de Cadastro de Prestadores de Serviços Turísticos · Ministério do Turismo</p></div></div></div></div></section>
+
+<!-- SOBRE -->
+<section id="sobre" class="relative overflow-hidden bg-navy py-28 md:py-40"><div class="mx-auto grid max-w-[1400px] items-start gap-12 px-5 md:grid-cols-2 md:px-10"><div class="relative mx-auto w-full max-w-lg" style="opacity:0;transform:translateY(24px)"><div aria-hidden="true" class="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border border-gold/30"></div><div class="relative overflow-hidden rounded-2xl border border-gold/40"><img src="assets/eduardo-martins-terno.png" alt="Eduardo Martins, fundador da Prime Trip" width="854" height="1280" loading="lazy" class="block h-auto w-full"></div></div><div><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">Sobre a Prime Trip</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Por trás da Prime Trip, <em class="text-gold-gradient">uma pessoa de verdade.</em></h2></div></div><div class="mt-8 space-y-5 text-[16px] leading-relaxed text-muted-foreground" style="opacity:0;transform:translateY(24px)"><p>A Prime Trip nasceu de uma decisão: transformar a paixão por viagens em um trabalho com propósito.</p><p>À frente da agência está Eduardo Martins, que deixou uma trajetória de anos no mercado financeiro para se dedicar a criar experiências e ajudar outras pessoas a conhecerem novos destinos.</p><p class="text-foreground/90">Aqui, cada viagem começa com uma conversa.</p><p>Antes de pensar em voos ou hotéis, queremos entender quem vai viajar, o que procura e como imagina essa experiência.</p><p>A partir daí, cuidamos do planejamento e acompanhamos cada etapa.</p><p class="text-foreground/90">Porque, para nós, uma boa viagem começa muito antes do embarque.</p></div><div class="mt-10" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px w-10 bg-gold-gradient"></span><p class="headline mt-6 text-2xl text-gold">Eduardo Martins</p><p class="eyebrow mt-2 text-[10px] text-muted-foreground">Fundador da Prime Trip</p></div><div class="mt-10" style="opacity:0;transform:translateY(24px)"><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Quero%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20viagens%20da%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[52px] items-center justify-center gap-3 px-8 text-[12px] font-medium uppercase tracking-[0.22em] transition-all duration-500 rounded-sm bg-gold-gradient text-navy hover:brightness-110">Falar diretamente com a Prime Trip</a></div></div></div></section>
+
+<!-- CTA -->
+<section class="relative overflow-hidden py-40 md:py-56"><img src="assets/cta-bg-BqvAz1e3.jpg" alt="Mar ao entardecer com o horizonte dourado" width="1280" height="720" loading="lazy" class="absolute inset-0 h-full w-full object-cover"><div class="absolute inset-0 bg-navy/70"></div><div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-navy to-transparent"></div><div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy to-transparent"></div><div class="relative mx-auto max-w-3xl px-5 text-center"><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.5rem,6vw,5rem)] text-foreground">Seu próximo destino está <span class="font-script text-[1.15em] font-normal text-gold-gradient">esperando.</span></h2></div><div style="opacity:0;transform:translateY(24px)"><p class="mx-auto mt-6 max-w-lg text-[16px] text-muted-foreground">Conte para a Prime Trip o que você sonha viver e deixe o planejamento com a gente.</p></div><div class="mt-10" style="opacity:0;transform:translateY(24px)"><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Gostaria%20de%20planejar%20minha%20pr%C3%B3xima%20viagem%20com%20a%20Prime%20Trip." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[52px] items-center justify-center gap-3 px-8 text-[12px] font-medium uppercase tracking-[0.22em] transition-all duration-500 rounded-sm bg-gold-gradient text-navy hover:brightness-110">Planejar minha viagem</a></div></div></section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-navy py-28 md:py-40"><div class="mx-auto grid max-w-[1400px] gap-12 px-5 md:grid-cols-12 md:px-10"><div class="md:col-span-4"><div><div class="mb-6 flex items-center gap-4" style="opacity:0;transform:translateY(24px)"><span aria-hidden="true" class="block h-px origin-left bg-gold-gradient w-10" style="transform:scaleX(0)"></span><span class="eyebrow text-gold">FAQ</span></div><div style="opacity:0;transform:translateY(24px)"><h2 class="headline text-[clamp(2.25rem,5vw,4.25rem)] text-foreground">Perguntas <em class="text-gold-gradient">frequentes.</em></h2></div></div></div><div id="faq-list" class="md:col-span-8"></div></div></section>
+</main>
+
+<footer class="relative bg-navy-deep"><div class="h-px w-full bg-gold-gradient opacity-60"></div><div class="mx-auto grid max-w-[1400px] gap-12 px-5 py-16 md:grid-cols-3 md:px-10"><span class="flex items-center gap-3"><img src="assets/logo-symbol-wX84g404.png" alt="" aria-hidden="true" width="540" height="340" class="h-9 w-auto"><span class="flex flex-col items-center leading-none"><span class="text-gold-gradient font-normal tracking-[0.35em] text-[17px]">PRIME TRIP</span><span class="mt-1.5 flex w-full items-center gap-1.5"><span class="h-px flex-1 bg-gold/50"></span><span class="text-[6.5px] tracking-[0.25em] text-gold/90">AGÊNCIA DE VIAGENS</span><span class="h-px flex-1 bg-gold/50"></span></span></span></span><nav aria-label="Rodapé" class="flex flex-col gap-3 text-[13px] text-muted-foreground"><a href="https://www.instagram.com/primetrip_oficial/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-light">Instagram · @primetrip_oficial</a><a href="https://api.whatsapp.com/send?phone=5517996849988&amp;text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20uma%20viagem." target="_blank" rel="noopener noreferrer" class="hover:text-gold-light">WhatsApp · Solicitar orçamento</a><a class="hover:text-gold-light" href="https://connect-joyfully-78.lovable.app/politica-de-privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></nav><div class="flex flex-col gap-3 text-[13px] text-muted-foreground"><a href="mailto:primetrip_oficial@hotmail.com" class="break-words hover:text-gold-light">primetrip_oficial@hotmail.com</a><span>Atendimento online</span></div></div><div class="border-t border-line px-5 py-6 text-center text-[11px] tracking-[0.15em] text-muted-foreground">© <span id="year">2026</span> Prime Trip. Todos os direitos reservados.</div></footer>
+
+<script src="https://unpkg.com/embla-carousel@8.6.0/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay@8.6.0/embla-carousel-autoplay.umd.js"></script>
+<script>
+(function () {
+  var WA = 'https://api.whatsapp.com/send?phone=5517996849988&text=';
+
+  // ---- Destinos ----
+  var destinos = [
+    ['noronha-BrEGpou6', 'Fernando de Noronha', 'Pernambuco · Brasil', 'O paraíso brasileiro.', 'Morro Dois Irmãos e mar turquesa em Fernando de Noronha', 'xl:col-span-5 xl:row-span-2'],
+    ['lencois-CONGd9u3', 'Lençóis Maranhenses', 'Maranhão · Brasil', 'Entre dunas e lagoas, um cenário inesquecível.', 'Dunas brancas e lagoas azul-esverdeadas nos Lençóis Maranhenses', 'xl:col-span-7'],
+    ['maldivas-AjpUhOFG', 'Maldivas', 'Oceano Índico', 'O silêncio mais bonito do mundo.', 'Bangalôs sobre a água nas Maldivas ao entardecer', 'xl:col-span-4'],
+    ['santorini-DbVZFBLR', 'Santorini', 'Grécia · Mar Egeu', 'Pores do sol que ficam na memória.', 'Cúpulas azuis de Oia, em Santorini, ao pôr do sol', 'xl:col-span-3'],
+    ['dubai-CKrba4cX', 'Dubai', 'Emirados Árabes', 'Onde o futuro encontra o luxo.', 'Skyline de Dubai iluminado com o Burj Khalifa', 'xl:col-span-7'],
+    ['orlando-CIFpW_Lo', 'Orlando', 'Flórida · Estados Unidos', 'Magia para toda a família.', 'Fogos de artifício sobre um lago em Orlando ao anoitecer', 'xl:col-span-5 xl:row-span-2'],
+    ['paris-CRRpOmbQ', 'Europa', 'França · Itália · Portugal', 'Histórias e descobertas em cada parada.', 'Torre Eiffel e Paris ao entardecer', 'xl:col-span-4'],
+    ['caribe-BkwTO-zf', 'Caribe', 'Aruba · Bahamas · Jamaica', 'Dias leves entre coqueiros e mar turquesa.', 'Praia caribenha com areia branca, coqueiros e mar turquesa', 'xl:col-span-3'],
+    ['jericoacoara-CP1PqdB7', 'Jericoacoara', 'Ceará · Brasil', 'Um pôr do sol para guardar na memória.', 'Pedra Furada em Jericoacoara ao pôr do sol', 'xl:col-span-6'],
+    ['maragogi-gz_Rdik-', 'Maragogi', 'Alagoas · Brasil', 'Águas cristalinas para aproveitar sem pressa.', 'Piscinas naturais de águas cristalinas em Maragogi', 'xl:col-span-6']
+  ];
+  document.getElementById('dest-grid').innerHTML = destinos.map(function (d) {
+    var msg = encodeURIComponent('Olá! Gostaria de mais informações da viagem para ' + d[1] + '.');
+    return '<a href="' + WA + msg + '" target="_blank" rel="noopener noreferrer" class="group relative block overflow-hidden bg-navy-mid min-w-0 aspect-[4/5] xl:aspect-auto ' + d[5] + '" style="opacity:0;transform:translateY(30px)">' +
+      '<img src="assets/dest-' + d[0] + '.jpg" alt="' + d[4] + '" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent transition-opacity duration-700 group-hover:from-navy group-hover:via-navy/60"></div>' +
+      '<div class="absolute inset-x-0 bottom-0 p-6 md:p-8"><span class="eyebrow block whitespace-nowrap text-[9px] tracking-[0.1em] text-gold lg:text-[10px]">' + d[2] + '</span>' +
+      '<h3 class="headline mt-3 text-3xl text-foreground md:text-4xl">' + d[1] + '</h3>' +
+      '<span class="mt-4 block h-px w-10 bg-gold-gradient transition-all duration-700 group-hover:w-24"></span>' +
+      '<div class="grid transition-all duration-700 md:grid-rows-[0fr] md:opacity-0 md:group-hover:grid-rows-[1fr] md:group-hover:opacity-100 md:group-focus-visible:grid-rows-[1fr] md:group-focus-visible:opacity-100"><div class="overflow-hidden">' +
+      '<p class="mt-4 text-[15px] text-muted-foreground">' + d[3] + '</p>' +
+      '<span class="mt-4 inline-block text-[11px] uppercase tracking-[0.22em] text-gold-light">Planejar esta viagem →</span></div></div></div></a>';
+  }).join('');
+
+  // ---- Depoimentos ----
+  // Para adicionar/remover depoimentos, edite esta lista (imagens em assets/depoimentos/).
+  var testimonials = [
+    { tripImage: 'assets/depoimentos/viagem-1.webp', testimonialImage: 'assets/depoimentos/print-2.png', alt: 'Foto da viagem do cliente' },
+    { tripImage: 'assets/depoimentos/viagem-4.webp', testimonialImage: 'assets/depoimentos/print-3.png', alt: 'Foto da viagem do cliente' },
+    { tripImage: 'assets/depoimentos/viagem-2.webp', testimonialImage: 'assets/depoimentos/print-4.png', alt: 'Foto da viagem do cliente' },
+    { tripImage: 'assets/depoimentos/viagem-3.webp', testimonialImage: 'assets/depoimentos/print-5.png', alt: 'Foto da viagem do cliente' }
+  ];
+  document.getElementById('t-track').innerHTML = testimonials.map(function (t, i) {
+    var lazy = i < 2 ? '' : ' loading="lazy"';
+    return '<div class="t-slide"><div class="t-card">' +
+      '<img class="t-trip" src="' + t.tripImage + '" alt="' + t.alt + '"' + lazy + '>' +
+      '<img class="t-quote" src="' + t.testimonialImage + '" alt="Depoimento de cliente da Prime Trip"' + lazy + '>' +
+      '</div></div>';
+  }).join('');
+
+  function initCarousel() {
+    if (!window.EmblaCarousel) return;
+    var viewport = document.getElementById('t-viewport');
+    var plugins = window.EmblaCarouselAutoplay
+      ? [EmblaCarouselAutoplay({ delay: 3500, stopOnInteraction: false, stopOnMouseEnter: true })]
+      : [];
+    var embla = EmblaCarousel(viewport, { loop: true, align: 'start', duration: 45, dragFree: false }, plugins);
+    var dotsEl = document.getElementById('t-dots');
+    dotsEl.innerHTML = embla.scrollSnapList().map(function (_, i) {
+      return '<button type="button" class="t-dot" role="tab" aria-label="Ir para o depoimento ' + (i + 1) + '"></button>';
+    }).join('');
+    var dots = [].slice.call(dotsEl.children);
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { embla.scrollTo(i); }); });
+    function sync() {
+      var sel = embla.selectedScrollSnap();
+      dots.forEach(function (d, i) { d.classList.toggle('is-active', i === sel); d.setAttribute('aria-selected', String(i === sel)); });
+    }
+    embla.on('select', sync); embla.on('reInit', sync); sync();
+    embla.on('pointerDown', function () { viewport.classList.add('is-dragging'); });
+    embla.on('pointerUp', function () { viewport.classList.remove('is-dragging'); });
+    document.getElementById('t-prev').addEventListener('click', function () { embla.scrollPrev(); });
+    document.getElementById('t-next').addEventListener('click', function () { embla.scrollNext(); });
+  }
+  if (document.readyState === 'complete') initCarousel(); else window.addEventListener('load', initCarousel);
+
+  // ---- Diferenciais ----
+  var difs = [
+    ['Planejamento personalizado', 'Cada roteiro nasce do seu perfil, do seu ritmo e do que você quer viver.'],
+    ['Atendimento próximo e online', 'Uma conversa direta, de onde você estiver, sem intermediários.'],
+    ['Roteiros nacionais e internacionais', 'Do litoral brasileiro às grandes capitais do mundo.'],
+    ['Curadoria de experiências', 'Passagens aéreas e hospedagens selecionadas com critério.'],
+    ['Praticidade e pagamento facilitado', 'Condições flexíveis para que a viagem caiba no seu momento.'],
+    ['Suporte em toda a viagem', 'Acompanhamos você do embarque ao retorno para casa.']
+  ];
+  document.getElementById('dif-list').innerHTML = difs.map(function (d, i) {
+    return '<li class="group relative list-none border-t border-line py-8" style="opacity:0;transform:translateY(24px)">' +
+      '<span class="absolute left-0 top-[-1px] h-px w-8 bg-gold transition-all duration-700 group-hover:w-full"></span>' +
+      '<div class="flex gap-6"><span class="headline text-xl text-gold/80">0' + (i + 1) + '</span><div>' +
+      '<h3 class="headline text-2xl text-foreground/90 transition-colors group-hover:text-foreground">' + d[0] + '</h3>' +
+      '<p class="mt-3 text-[15px] text-muted-foreground transition-colors group-hover:text-foreground/80">' + d[1] + '</p></div></div></li>';
+  }).join('');
+
+  // ---- FAQ ----
+  var orc = '<a href="' + WA + encodeURIComponent('Olá! Gostaria de solicitar um orçamento para uma viagem.') + '" target="_blank" rel="noopener noreferrer" class="mt-4 block text-[11px] uppercase tracking-[0.22em] text-gold-light underline decoration-gold/50 underline-offset-8">Solicitar orçamento →</a>';
+  var faqs = [
+    ['A Prime Trip trabalha com viagens internacionais?', 'Sim. Planejamos viagens nacionais e internacionais, de acordo com o seu perfil e o seu momento.'],
+    ['Vocês montam roteiros personalizados?', 'Sim. Cada roteiro é pensado individualmente, considerando seus interesses, estilo de viagem e expectativas.'],
+    ['Posso solicitar apenas a passagem ou a hospedagem?', 'Sim. Você pode solicitar serviços específicos ou um planejamento completo.'],
+    ['A Prime Trip atende viagens em família?', 'Sim. Planejamos viagens para casais, famílias, grupos e viajantes individuais.'],
+    ['Como funciona o planejamento da viagem?', 'Você conversa com a Prime Trip pelo WhatsApp, conta o que deseja viver e recebe um planejamento alinhado ao seu perfil, com todos os detalhes organizados.'],
+    ['Como faço para solicitar um orçamento?', 'Basta clicar no botão de WhatsApp e enviar as informações da sua viagem. Retornamos com uma proposta personalizada.' + orc],
+    ['Quais são as condições de pagamento?', 'Trabalhamos com condições de pagamento facilitadas. Fale com a Prime Trip para conhecer as opções disponíveis para a sua viagem.']
+  ];
+  var faqList = document.getElementById('faq-list');
+  faqList.innerHTML = faqs.map(function (f, i) {
+    return '<div class="faq-item border-b border-line' + (i === 0 ? ' open' : '') + '"><h3><button class="flex w-full items-center justify-between gap-6 py-7 text-left" aria-expanded="' + (i === 0) + '" aria-controls="faq-' + i + '">' +
+      '<span class="headline text-xl text-foreground md:text-2xl">' + f[0] + '</span>' +
+      '<span class="relative h-4 w-4 shrink-0" aria-hidden="true"><span class="absolute left-0 top-1/2 h-px w-4 bg-gold"></span><span class="faq-plus absolute left-1/2 top-0 h-4 w-px bg-gold transition-transform duration-500"></span></span></button></h3>' +
+      '<div id="faq-' + i + '" class="faq-panel"><div><div class="max-w-2xl pb-8 text-[15px] leading-relaxed text-muted-foreground">' + f[1] + '</div></div></div></div>';
+  }).join('');
+  faqList.addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    var item = btn.closest('.faq-item');
+    var wasOpen = item.classList.contains('open');
+    faqList.querySelectorAll('.faq-item').forEach(function (el) {
+      el.classList.remove('open');
+      el.querySelector('button').setAttribute('aria-expanded', 'false');
+    });
+    if (!wasOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+  });
+
+  // ---- Header on scroll ----
+  var header = document.getElementById('site-header');
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- Mobile menu ----
+  var btn = document.getElementById('menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  var bars = btn.querySelectorAll('span');
+  function setMenu(open) {
+    menu.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    bars[0].style.transform = open ? 'translateY(3.5px) rotate(45deg)' : '';
+    bars[1].style.transform = open ? 'translateY(-3.5px) rotate(-45deg)' : '';
+    document.body.style.overflow = open ? 'hidden' : '';
+    menu.querySelectorAll('nav a').forEach(function (a, i) { a.style.transitionDelay = open ? (0.1 + i * 0.06) + 's' : '0s'; });
+  }
+  btn.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+
+  // ---- Reveal animations ----
+  var ease = 'cubic-bezier(.16,1,.3,1)';
+  function reveal(el, delay) {
+    el.style.transition = 'opacity 1s ' + ease + ' ' + delay + 's, transform 1.2s ' + ease + ' ' + delay + 's';
+    el.style.opacity = '';
+    el.style.transform = '';
+  }
+  var targets = [].slice.call(document.querySelectorAll('main [style*="opacity:0"], main [style*="scaleX(0)"], main [style*="translateY(40px)"]'))
+    .filter(function (el) { return !el.hasAttribute('data-hero'); });
+  if (!('IntersectionObserver' in window)) { targets.forEach(function (el) { reveal(el, 0); }); }
+  else {
+    var io = new IntersectionObserver(function (entries) {
+      var n = 0;
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { reveal(en.target, Math.min(n++ * 0.08, 0.4)); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    targets.forEach(function (el) { io.observe(el); });
+  }
+  document.querySelectorAll('[data-hero]').forEach(function (el, i) {
+    requestAnimationFrame(function () { reveal(el, 0.2 + i * 0.15); });
+  });
+})();
+</script>
+</body>
+</html>
